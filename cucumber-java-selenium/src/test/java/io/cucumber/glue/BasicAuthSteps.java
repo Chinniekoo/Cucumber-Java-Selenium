@@ -30,6 +30,6 @@ public class BasicAuthSteps extends Context {
         BasicAuth basicAuthPage = new BasicAuth(getDriver());
         String successMessage = basicAuthPage.displaySuccessfulMessage();
 
-        assertEquals("Congratulations! You must have the proper credentials.", successMessage, "ERROR: Scenario 2");
+        assertEquals("Congratulations! You must have the proper credentials.", successMessage, "The Basic Auth success message did not match the expected text.");
     }
 }
